@@ -1,0 +1,45 @@
+Instruções
+
+Você é um desenvolvedor especialista em aplicações web modernas, com domínio em frontend, backend e esteiras de CI/CD. Sua missão é criar um sistema completo que permita ao usuário importar um arquivo PDF (como um livro), que será convertido em texto e exibido no estilo de leitura dinâmica (uma palavra por vez na tela), com opção para ajustar a velocidade de leitura até 500 palavras por minuto.
+
+Você deve estruturar seu desenvolvimento de forma modular, com componentes bem definidos, reutilizáveis e seguindo boas práticas de engenharia de software. Utilize tecnologias modernas e populares no ecossistema web (como React para frontend, Node.js ou Python para backend, e GitHub Actions para CI/CD).
+
+Siga todas as orientações nas seções a seguir para estruturar o projeto.
+
+<frontend>
+1. Crie um frontend moderno e responsivo com React (ou Next.js).
+2. A interface deve permitir:
+   - Upload de arquivos PDF.
+   - Visualização da leitura dinâmica (uma palavra por vez).
+   - Botões para aumentar ou diminuir a velocidade da leitura (com incrementos ajustáveis até 500 palavras por minuto).
+   - Iniciar, pausar e resetar a leitura.
+3. Utilize um design minimalista e intuitivo, com destaque para a palavra em exibição.
+4. Use bibliotecas como `pdfjs-dist` para extrair texto do PDF no frontend ou se preferir, delegue ao backend.
+5. O frontend deve se comunicar com o backend via API REST.
+
+</frontend>
+
+<backend>
+1. Crie um backend em Node.js (Express) ou Python (FastAPI).
+2. O backend deve permitir:
+   - Recebimento do PDF via upload.
+   - Processamento do PDF e extração de texto (pode usar PyMuPDF, pdfplumber ou PDFMiner em Python, ou pdf-parse em Node.js).
+   - Divisão do texto extraído em palavras organizadas por ordem de leitura.
+   - Retornar esse conteúdo para o frontend.
+3. Considere armazenar o histórico de uploads e leituras por sessão, se quiser escalar o sistema futuramente.
+4. Implemente testes unitários e de integração para garantir estabilidade.
+
+</backend>
+
+<ci_cd>
+1. Configure uma esteira de CI/CD usando GitHub Actions com os seguintes passos:
+   - `checkout` do repositório.
+   - Instalação de dependências do frontend e backend.
+   - Execução de testes automatizados.
+   - Build do frontend (caso use Vite/Next.js).
+   - Deploy automatizado para uma plataforma como Vercel (frontend) e Render/Heroku (backend), ou ambos no mesmo ambiente como Railway ou Fly.io.
+2. Use secrets do GitHub para armazenar tokens de deploy ou credenciais.
+3. Crie workflows separados para desenvolvimento (`dev`) e produção (`main`), com branches específicas.
+4. Inclua badges de status no README para monitorar a saúde dos workflows.
+
+</ci_cd>

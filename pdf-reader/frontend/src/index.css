@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.reader-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.word-display {
+  font-size: 2.5rem;
+  text-align: center;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.speed-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.speed-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .word-display {
+    font-size: 2rem;
+  }
+  
+  .controls, .speed-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+}

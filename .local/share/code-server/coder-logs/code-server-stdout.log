@@ -1,0 +1,27 @@
+[2025-04-21T15:44:55.570Z] info  code-server 4.99.1 0a92b7630413a9739541251a47ae6d509fa0e229
+[2025-04-21T15:44:55.591Z] info  Using user-data-dir /home/ubuntu/.local/share/code-server
+[2025-04-21T15:44:55.607Z] info  Using config file /home/ubuntu/.config/code-server/config.yaml
+[2025-04-21T15:44:55.607Z] info  HTTP server listening on http://0.0.0.0:8329/
+[2025-04-21T15:44:55.607Z] info    - Authentication is enabled
+[2025-04-21T15:44:55.607Z] info      - Using password from /home/ubuntu/.config/code-server/config.yaml
+[2025-04-21T15:44:55.607Z] info    - Not serving HTTPS
+[2025-04-21T15:44:55.607Z] info  Session server listening on /home/ubuntu/.local/share/code-server/code-server-ipc.sock
+[02:01:16] 
+
+
+
+
+[02:01:16] Extension host agent started.
+[02:01:16] Started initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.local/share/code-server/extensions
+[02:01:16] Completed initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.local/share/code-server/extensions
+[02:01:20] [10.199.35.1][447cb131][ManagementConnection] New connection established.
+[02:01:23] [10.199.35.1][72d8396e][ExtensionHostConnection] New connection established.
+[02:01:23] [10.199.35.1][72d8396e][ExtensionHostConnection] <4610> Launched Extension Host Process.
+[02:34:14] [10.3.29.1][447cb131][ManagementConnection] The client has reconnected.
+[02:34:15] [10.3.29.1][72d8396e][ExtensionHostConnection] The client has reconnected.
+[02:41:28] [10.3.29.1][72d8396e][ExtensionHostConnection] The client has reconnected.
+[02:44:10] [10.3.29.1][447cb131][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[02:44:10] [10.3.29.1][72d8396e][ExtensionHostConnection] <4610> Extension Host Process exited with code: 0, signal: null.
+[02:44:27] [10.3.29.1][7ed23efd][ManagementConnection] New connection established.
+[02:44:30] [10.3.29.1][351ad98e][ExtensionHostConnection] New connection established.
+[02:44:30] [10.3.29.1][351ad98e][ExtensionHostConnection] <14077> Launched Extension Host Process.
